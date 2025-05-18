@@ -1,0 +1,11 @@
+{
+    "name": "Ralph Strum",
+    "bio": "With over a decade of stage experience,I strum rock, blues, and improvisation techniques—empowering students to find their unique tone.",
+    "photoUrl": "./assets/images/instructors/hero-person.jpg",
+    "specialties": ["Blues", "Rock", "Improvisation"],
+    "website": "https://.ralphguitar.yogeshv.com",
+    "socialLinks": {
+        "instagram": "https://instagram.com/",
+        "youtube": "https://youtube.com/"
+    }
+}

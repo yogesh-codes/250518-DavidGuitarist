@@ -1,0 +1,32 @@
+[
+    {
+        "id": "c1",
+        "title": "Essentials of Guitar",
+        "description": "Everyone was once a beginner. Get comfortable, understand the language , just enough",
+        "level": "Absolute Beginners",
+        "priceINR": 5000,
+        "lessonsCount": 12,
+        "duration": "4 months"
+    },
+
+    {
+        "id": "c2",
+        "title": "BasicsGuitar",
+        "description": "You are introduced to chords. You'll learn 3 simple songs Melody and Chords",
+        "level": "Beginner",
+        "description-expectation": "By the end of this, you will be able to play pretty much any song.",
+        "priceINR": 6000,
+        "lessonsCount": 12,
+        "duration": "4 months"
+    },
+
+    {
+        "id": "c3",
+        "title": "Intermediate",
+        "description": "You will expand from C Major to GMajor and DMajor. And look at 4 beautiful pieces",
+        "level": "Intermediate",
+        "priceINR": 6000,
+        "lessonsCount": 12,
+        "duration": "4 months"
+    }
+]
