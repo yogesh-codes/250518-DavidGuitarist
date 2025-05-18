@@ -1,3 +1,11 @@
-import { type RouteConfig, index } from "@react-router/dev/routes";
+import {
+    type RouteConfig,
+    index,
+    layout,
+    route,
+} from "@react-router/dev/routes";
+//import { ErrorBoundary } from "./layouts/StandardLayout";
 
-export default [index("routes/home.tsx")] satisfies RouteConfig;
+export default [
+    layout("./layouts/StandardLayout.tsx", [index("./routes/Home.tsx")]),
+] satisfies RouteConfig;
