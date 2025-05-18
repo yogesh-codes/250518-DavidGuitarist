@@ -3,8 +3,8 @@
         "id": "t0",
         "studentName": "Jared K.",
         "studentDuration": "3 months",
-        "content": "Ralph is awesome! His teaching has completely transformed my playing—now I can solo with feeling and confidence!",
-        "avatarUrl": "/images/students/jared.jpg"
+        "content": "Ralph is just awesome! His teaching has completely transformed my playing— now I can solo with confidence!",
+        "avatarUrl": "./assets/students-avatar/jared.jpg"
     },
     {
         "id": "t1",
