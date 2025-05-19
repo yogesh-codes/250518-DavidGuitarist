@@ -1,0 +1,41 @@
+name: Deploy Vite+React to GitHub Pages
+
+permissions:
+    contents: write # grant the GITHUB_TOKEN push permissions
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build-and-deploy:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: 22
+
+            - name: Install dependencies
+              working-directory: .
+              run: npm ci
+
+            - name: Build
+              working-directory: .
+              run: npm run build
+
+            - name: Configure Git user
+              run: |
+                  git config --global user.name  "github-actions[bot]"
+                  git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+            - name: Deploy to GitHub Pages
+              working-directory: .
+              env:
+                  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+              run: npx gh-pages -d build -b gh-pages -r "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
