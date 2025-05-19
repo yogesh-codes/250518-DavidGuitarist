@@ -1,4 +1,4 @@
-import type { Route } from "./+types/Home";
+import type { Route } from "./+types/home";
 
 import HeroSection from "~/sections/HeroSection/HeroSection";
 import TestimonialsSection from "~/sections/TestimonialsSection/TestimonialsSection";

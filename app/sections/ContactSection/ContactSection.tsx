@@ -1,17 +1,31 @@
-import { Form } from "react-router";
+import { Form, useNavigate } from "react-router";
 import instructorDetails from "~/assets/instructorDetails.json";
 import PageInfo from "~/components/PageInfo/PageInfo";
 import Section from "~/components/Section/Section";
 import H2 from "~/components/H2/H2";
+import Button from "~/components/Button/Button";
+import type { FormEvent, FormEventHandler } from "react";
 
 export default function ContactSection() {
     const { name, email } = instructorDetails;
+    const navigate = useNavigate();
+    //fake submit
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        navigate("/register-success");
+    };
+
     return (
         <Section className="bg-secondary bg-cover bg-center">
             <PageInfo>
                 <H2 className=" text-nlight ">Let's begin your journey!</H2>
 
-                <Form className=" flex flex-col gap-4">
+                <Form
+                    className=" flex flex-col gap-4"
+                    onSubmit={(e) => {
+                        handleSubmit(e);
+                    }}
+                >
                     <div>
                         <p className="text-nlight">
                             What would you like me to call you?
@@ -72,9 +86,7 @@ export default function ContactSection() {
                             placeholder="I'd like to play songs of..."
                         />
                     </div>
-                    <button className="bg-ndark text-nlight p-2" type="submit">
-                        Send
-                    </button>
+                    <Button type="submit">Send</Button>
                 </Form>
             </PageInfo>
             {/* <h3>My Details</h3>
