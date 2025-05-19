@@ -7,7 +7,11 @@
         "dev": "react-router dev",
         "start": "react-router-serve ./build/server/index.js",
         "typecheck": "react-router typegen && tsc",
-        "dev:mem": "node --inspect ./node_modules/.bin/vite"
+        "dev:mem": "node --inspect ./node_modules/.bin/vite",
+        "preview": "vite preview",
+        "predeploy": "npm run build",                           // builds into /dist
+        "deploy":   "gh-pages --dist dist --branch gh-pages"   // pushes /dist to gh-pages branch
+  }
     },
     "dependencies": {
         "@react-router/node": "^7.5.3",
@@ -24,6 +28,7 @@
         "@types/node": "^20",
         "@types/react": "^19.1.2",
         "@types/react-dom": "^19.1.2",
+        "gh-pages": "^6.3.0",
         "tailwindcss": "^4.1.4",
         "typescript": "^5.8.3",
         "vite": "^6.3.3",
