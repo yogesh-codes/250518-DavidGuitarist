@@ -1,4 +1,4 @@
-import{w as y}from"./with-props-CBXr1hFu.js";import{o as e,v as b,a as i}from"./chunk-D4RADZKF-Dl4N_WrM.js";import{S as l,P as d,H as u}from"./H2-Cm5bnX0f.js";import{d as j,e as v}from"./index-CIl-Hi68.js";const w="/assets/david2-DqyYnwp2.png";function N(){return e.jsx("div",{className:`\r
+import{w as y}from"./with-props-CBXr1hFu.js";import{o as e,v as b,a as i}from"./chunk-D4RADZKF-Dl4N_WrM.js";import{S as l,P as d,H as u}from"./H2-Cm5bnX0f.js";import{d as j,e as v}from"./index-CIl-Hi68.js";const w="/250518-DavidGuitarist/assets/david2-DqyYnwp2.png";function N(){return e.jsx("div",{className:`\r
             h-56 sm:h-64 md:h-80 lg:h-140 \r
             transform bg-cover \r
             bg-right \r
