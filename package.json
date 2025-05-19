@@ -9,9 +9,8 @@
         "typecheck": "react-router typegen && tsc",
         "dev:mem": "node --inspect ./node_modules/.bin/vite",
         "preview": "vite preview",
-        "predeploy": "npm run build",                           // builds into /dist
-        "deploy":   "gh-pages --dist dist --branch gh-pages"   // pushes /dist to gh-pages branch
-  }
+        "predeploy": "npm run build",
+        "deploy": "gh-pages --dist dist --branch gh-pages"
     },
     "dependencies": {
         "@react-router/node": "^7.5.3",
