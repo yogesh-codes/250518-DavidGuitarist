@@ -38,4 +38,4 @@ jobs:
               working-directory: .
               env:
                   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              run: npx gh-pages -d dist -b gh-pages -r "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
+              run: npx gh-pages -d build -b gh-pages -r "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git"
