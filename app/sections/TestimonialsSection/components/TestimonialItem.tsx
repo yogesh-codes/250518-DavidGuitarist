@@ -12,9 +12,11 @@ const TestimonialItem: FunctionComponent<TestimonialItemProps> = ({
     content,
 }) => {
     return (
-        <div>
-            <div className="p-2 m-2">{content}</div>
-            <div>{studentName}</div>
+        <div className="font-quicksand max-w-64">
+            <div className=" rounded-2xl p-4 bg-purewhite text-pureblack">
+                {content}
+            </div>
+            <div className="text-pureblack">{studentName}</div>
         </div>
     );
 };

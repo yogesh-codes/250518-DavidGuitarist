@@ -1,13 +1,16 @@
 import { isRouteErrorResponse, Outlet, useRouteError } from "react-router";
-import Header from "./Header";
+import Header from "./Header/Header";
+import Footer from "./Footer";
+import { useLayoutEffect } from "react";
 
 export default function StandardLayout() {
     return (
         <>
             <Header></Header>
-            <main>
+            <main className="self-center">
                 <Outlet />
             </main>
+            <Footer></Footer>
         </>
     );
 }

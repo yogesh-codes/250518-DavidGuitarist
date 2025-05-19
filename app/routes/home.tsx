@@ -1,7 +1,11 @@
 import type { Route } from "./+types/Home";
 
-import HeroSection from "~/section/HeroSection";
-import TestimonialsSection from "~/section/TestimonialsSection/TestimonialsSection";
+import HeroSection from "~/sections/HeroSection/HeroSection";
+import TestimonialsSection from "~/sections/TestimonialsSection/TestimonialsSection";
+import ContactSection from "~/sections/ContactSection/ContactSection";
+import ProjectsSection from "~/sections/ProjectsSection/ProjectsSection";
+import AboutSection from "~/sections/AboutSection/AboutSection";
+import FaqSection from "~/sections/FaqSection/FaqSection";
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -12,9 +16,13 @@ export function meta({}: Route.MetaArgs) {
 
 export default function Home() {
     return (
-        <div>
+        <div className="">
             <HeroSection />
+            <AboutSection />
+            <ProjectsSection />
             <TestimonialsSection />
+            <ContactSection />
+            <FaqSection />
         </div>
     );
 }

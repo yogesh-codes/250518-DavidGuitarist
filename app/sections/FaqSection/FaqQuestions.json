@@ -1,0 +1,42 @@
+[
+    {
+        "id": "faq0",
+        "question": "What levels of experience do you teach?",
+        "answer": "I teach all levels, from absolute beginners who have never held a guitar before, to advanced players looking to refine technique or explore new styles."
+    },
+    {
+        "id": "faq1",
+        "question": "How long is each lesson and how often should I take them?",
+        "answer": "Standard lessons are 60 minutes long. Most students start with one lesson per week, but you can adjust frequency based on your goals and schedule."
+    },
+    {
+        "id": "faq2",
+        "question": "What equipment do I need to get started?",
+        "answer": "You’ll need a well-set-up acoustic or electric guitar, a tuner, a spare pack of strings, and a notebook for jotting down tips and exercises."
+    },
+    {
+        "id": "faq3",
+        "question": "Do you offer online lessons?",
+        "answer": "Yes! All the same structured curriculum and personalized feedback is available via Zoom or Skype. Online students receive digital resources and recorded lesson clips."
+    },
+    {
+        "id": "faq4",
+        "question": "What is your cancellation policy?",
+        "answer": "Please provide at least 24 hours’ notice to cancel or reschedule. Late cancellations (under 24 hours) incur a 50% lesson fee."
+    },
+    {
+        "id": "faq5",
+        "question": "Do you offer trial lessons?",
+        "answer": "Absolutely—new students can book a 30-minute trial lesson at a discounted rate to see if my teaching style is the right fit."
+    },
+    {
+        "id": "faq6",
+        "question": "How do I pay for lessons?",
+        "answer": "I accept credit/debit cards, PayPal, and bank transfers. Payment is due at the start of each month for recurring lessons, or per lesson if you prefer."
+    },
+    {
+        "id": "faq7",
+        "question": "Can I switch between in-person and online lessons?",
+        "answer": "Yes, you’re welcome to mix and match formats as needed—just give me a heads-up when booking so I can send the appropriate lesson link or location details."
+    }
+]
