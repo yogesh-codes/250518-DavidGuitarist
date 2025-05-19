@@ -1,4 +1,4 @@
-import{o as s}from"./chunk-D4RADZKF-C54WxZWr.js";function a({children:e,className:t="",...x}){return s.jsx("div",{...x,className:`${t} w-full flex flex-col items-center justify-start px-4 py-4 bg-nlight`,children:e})}function l({children:e,className:t="",...x}){return s.jsx("div",{...x,className:`
+import{o as s}from"./chunk-D4RADZKF-Dl4N_WrM.js";function a({children:e,className:t="",...x}){return s.jsx("div",{...x,className:`${t} w-full flex flex-col items-center justify-start px-4 py-4 bg-nlight`,children:e})}function l({children:e,className:t="",...x}){return s.jsx("div",{...x,className:`
                 ${t}
                 flex flex-col 
              sbg-red-500
