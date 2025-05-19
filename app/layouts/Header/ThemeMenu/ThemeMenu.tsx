@@ -39,7 +39,7 @@ export default function ThemeMenu() {
     };
 
     return (
-        <div className="px-4 py-2">
+        <div className="block">
             <button
                 className="rounded-3xl text-3xl cursor-pointer"
                 onClick={toggleTheme}

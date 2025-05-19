@@ -25,7 +25,7 @@ export default function ContactSection() {
                             Name
                         </label>
                         <input
-                            className="w-100 bg-nlight text-ndark text-1xl/loose p-2"
+                            className="w-full bg-nlight text-ndark text-1xl/loose p-2"
                             id="username"
                             name="username"
                             type="text"
@@ -44,7 +44,7 @@ export default function ContactSection() {
                             Email
                         </label>
                         <input
-                            className="w-100 bg-nlight  text-ndark text-1xl/loose p-2"
+                            className="w-full bg-nlight  text-ndark text-1xl/loose p-2"
                             type="email"
                             name="useremail"
                             id="useremail"
@@ -66,7 +66,7 @@ export default function ContactSection() {
                             Email
                         </label>
                         <textarea
-                            className="w-100 bg-nlight  text-ndark text-1xl/loose p-2"
+                            className="w-full bg-nlight  text-ndark text-1xl/loose p-2"
                             name="extra"
                             id="extra"
                             placeholder="I'd like to play songs of..."

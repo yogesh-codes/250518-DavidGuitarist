@@ -21,7 +21,7 @@ export default function FaqSection() {
 
     return (
         <Section>
-            <PageInfo className="w-9/12">
+            <PageInfo className="w-10/12">
                 <H2>FAQs</H2>
                 <ul>{cards}</ul>
             </PageInfo>

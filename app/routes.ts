@@ -7,6 +7,10 @@ import {
 //import { ErrorBoundary } from "./layouts/StandardLayout";
 
 export default [
-    layout("./layouts/StandardLayout.tsx", [index("routes/home.tsx")]),
-    // route("/about", "./pages/About/About.tsx"),
+    layout("./layouts/MasterLayout.tsx", [
+        layout("./layouts/StandardLayout.tsx", [
+            index("routes/home.tsx"),
+            route("project-info", "routes/project-info.tsx"),
+        ]),
+    ]),
 ] satisfies RouteConfig;

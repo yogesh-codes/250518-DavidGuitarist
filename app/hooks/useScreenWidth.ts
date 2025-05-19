@@ -1,6 +1,6 @@
 // useScreenWidth.ts
 import { useSyncExternalStore } from "react";
-import { getScreenWidth } from "./utils/screenUtils";
+import { getScreenWidth } from "../utils/screenUtils";
 
 function subscribe(cb: () => void) {
     if (typeof window !== "undefined") {

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "feat0",
+        "title": "feature",
+        "content": "content"
+    },
+    {
+        "id": "feat1",
+        "title": "Responsive Mobile-First UI",
+        "content": "Tested for small mobile screens 360px to large monitors 2048px"
+    },
+    {
+        "id": "feat2",
+        "title": "Smooth Transitions",
+        "content": "On changing width, the elements glide to their loc"
+    },
+    {
+        "id": "feat3",
+        "title": "Dark Mode",
+        "content": "content"
+    },
+    {
+        "id": "feat4",
+        "title": "Responsive NavBar",
+        "content": "Shows Hamburger menu upto small tablets, otherwise shows expanded items"
+    }
+]

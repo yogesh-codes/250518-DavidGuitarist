@@ -9,13 +9,16 @@
 
     /* --color-*: initial; */
 
-    --color-primary: #27436c;
+    --color-primary: #2a4826;
+    /* #27436c; */
     --color-secondary: #897b77;
-    --color-accent: #f0d278;
-    --color-ndark: #27436c;
-    --color-nlight: #f3f3f3;
+    --color-accent: #a08c34;
+    /* #f0d278; */
+    --color-ndark: #705e44;
+    /* #27436c; */
+    --color-nlight: #ececec;
     --color-ngrey: #d6d6d6;
-    --color-nbehind: #395f99;
+    /* --color-nbehind: #395f99; */
     --color-purewhite: #ffffff;
     --color-pureblack: #000000;
 }
@@ -27,7 +30,8 @@
         font-family: "QuicksandVariable";
         font-style: normal;
         font-weight: 400 500 900;
-        font-display: swap;
+        font-display: block;
+        /* swap; */
         src: url("./assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf")
             format("truetype");
     }
@@ -44,12 +48,14 @@
     .theme-dark {
         --color-primary: #ffffff;
         --color-secondary: #9d9b9a;
-        --color-accent: #f0d278;
-        --color-ndark: #d6d6d6;
-        --color-nlight: #09172c;
+        --color-accent: #e8c89d;
+        --color-ndark: #e6d6d6;
+        --color-nlight: #0f1d11;
+        /* #09172c; */
         --color-ngrey: #444444;
         --color-nbehind: #acb4b7;
-        --color-purewhite: #27436c;
+        --color-purewhite: #2a4826;
+        /* #27436c; */
         --color-pureblack: #ffffff;
     }
 
@@ -66,6 +72,26 @@
         @apply bg-white dark:bg-gray-950;
         font-family: var(--font-quicksand);
     }
+
+    h1 {
+        @apply text-4xl mb-4 
+                xs:text-5xl 
+                text-ndark 
+                text-center 
+                self-center;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        @apply mt-2;
+    }
+
+    /* p,
+    span {
+        @apply text-ndark;
+    } */
 
     /* OS-level dark mode color scheme */
     @media (prefers-color-scheme: dark) {

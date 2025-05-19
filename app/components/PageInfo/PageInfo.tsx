@@ -18,10 +18,11 @@ export default function PageInfo({
             className={`
                 ${className}
                 flex flex-col 
-             dbg-red-500
-                max-w-11/12
+             sbg-red-500
+                max-w-full
                 
-                px-4 py-4
+                px-0 py-0
+                xs:px-4 xs:py-4
                 xs:max-w-11/12
                 sm:max-w-11/12 
                 md:max-w-11/12
