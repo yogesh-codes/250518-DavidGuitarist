@@ -1,4 +1,4 @@
-import{w as y}from"./with-props-DQ-4iVvM.js";import{o as e,a as r}from"./chunk-D4RADZKF-BlkkXO5c.js";import{T as w}from"./TestimonialsSection-BAlmYBxi.js";import{C as j}from"./ContactSection-pve716Gr.js";import{P as f}from"./P-CHHTNPDk.js";import{H as g}from"./H2-CcMczRmV.js";import{S as d,P as u}from"./PageInfo-BhwdRJeh.js";import{H as v,d as k,e as q}from"./HightlightText-Boy0xsV_.js";import"./Button-CD1oqBU_.js";const N="/assets/david2-DqyYnwp2.png";function I(){return e.jsx("div",{className:`\r
+import{w as y}from"./with-props-DQ-4iVvM.js";import{o as e,a as r}from"./chunk-D4RADZKF-BlkkXO5c.js";import{T as w}from"./TestimonialsSection-BkyCfe5H.js";import{C as j}from"./ContactSection-D8MzsnbZ.js";import{P as f}from"./P-BbWISdge.js";import{H as g}from"./H2-CcMczRmV.js";import{S as d,P as u}from"./PageInfo-BhwdRJeh.js";import{H as v,d as k,e as q}from"./HightlightText-Boy0xsV_.js";import"./Button-CD1oqBU_.js";const N="/assets/david2-DqyYnwp2.png";function I(){return e.jsx("div",{className:`\r
             h-56 sm:h-64 md:h-80 lg:h-140 \r
             transform bg-cover \r
             bg-right \r
