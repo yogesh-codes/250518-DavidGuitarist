@@ -24,14 +24,14 @@ export default function NavList({ className, ...rest }: NavListProps) {
             <NavItem toUrl="/" icon={<GoHomeFill />}>
                 Home
             </NavItem>
-            <NavItem toUrl="/live-classes" icon={<MdAccessTimeFilled />}>
+            {/* <NavItem toUrl="/live-classes" icon={<MdAccessTimeFilled />}>
                 LiveClasses
-            </NavItem>
-            <NavItem toUrl="/#contact" icon={<MdContactMail />}>
+            </NavItem> */}
+            <NavItem toUrl="/contact" icon={<MdContactMail />}>
                 Contact
             </NavItem>
 
-            <NavItem toUrl="/#testimonials" icon={<FaPeopleRoof />}>
+            <NavItem toUrl="/testimonials" icon={<FaPeopleRoof />}>
                 Testimonials
             </NavItem>
             <NavItem toUrl="/project-info" icon={<IoMdInformationCircle />}>

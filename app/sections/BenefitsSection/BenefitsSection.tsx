@@ -6,7 +6,7 @@ import H2 from "~/components/H2/H2";
 import Section from "~/components/Section/Section";
 import PageInfo from "~/components/PageInfo/PageInfo";
 
-export default function ProjectsSection() {
+export default function BenefitsSection() {
     let cards = [];
 
     for (let i = 0; i < projectsData.length; i++) {

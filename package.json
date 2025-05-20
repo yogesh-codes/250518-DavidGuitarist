@@ -2,7 +2,7 @@
     "name": "david-guitarist",
     "private": true,
     "type": "module",
-    "homepage": "https://yogesh-codes.github.io/250518-DavidGuitarist/",
+    "homepage": "https://david.yogeshv.com",
     "scripts": {
         "build": "react-router build",
         "dev": "react-router dev",

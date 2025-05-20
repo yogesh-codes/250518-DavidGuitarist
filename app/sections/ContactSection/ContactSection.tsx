@@ -16,7 +16,10 @@ export default function ContactSection() {
     };
 
     return (
-        <Section className="bg-secondary bg-cover bg-center">
+        <Section
+            id="ContactSection"
+            className="bg-secondary bg-cover bg-center"
+        >
             <PageInfo>
                 <H2 className=" text-nlight ">Let's begin your journey!</H2>
 

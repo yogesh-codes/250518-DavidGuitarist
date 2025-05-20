@@ -3,6 +3,7 @@ import instructorDetails from "~/assets/instructorDetails.json";
 
 import Section from "~/components/Section/Section";
 import PageInfo from "~/components/PageInfo/PageInfo";
+import HighlightText from "~/layouts/Footer/components/HightlightText";
 
 export default function AboutSection() {
     const { name, email } = instructorDetails;
@@ -23,9 +24,12 @@ export default function AboutSection() {
                     tunes in the living room.
                 </p>
                 <div className="mb-4"></div>
-                <button className="text-nlight bg-ndark p-2 rounded-2xl">
-                    Start Your Free Trial Lesson
-                </button>
+                <HighlightText
+                    toUrl="#ContactSection"
+                    className="text-nlight bg-ndark p-2 rounded-2xl"
+                >
+                    Book Your Free Trial Lesson
+                </HighlightText>
             </PageInfo>
         </Section>
     );

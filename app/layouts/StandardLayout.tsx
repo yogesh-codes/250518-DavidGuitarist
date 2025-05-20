@@ -1,6 +1,6 @@
 import { isRouteErrorResponse, Outlet, useRouteError } from "react-router";
 import Header from "./Header/Header";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 import { useLayoutEffect } from "react";
 
 export default function StandardLayout() {

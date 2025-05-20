@@ -63,13 +63,10 @@ export default function Navbar() {
 
     //if you moved away from the nav menu, reset isExpanded
     const handleOnBlur = (e: React.FocusEvent) => {
-        console.log("moved away from navbar");
-        if (
-            selfRef.current &&
-            true
-            // !selfRef.current.contains(e.relatedTarget as Node)
-        ) {
+        if (selfRef.current && !selfRef.current.contains(e.relatedTarget)) {
             setIsExpanded(false);
+            console.log(e.relatedTarget);
+            console.log("moved away from navbar");
         }
     };
 

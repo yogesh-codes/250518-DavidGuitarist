@@ -1,4 +1,4 @@
-import type { Route } from "./+types/home";
+import type { Route } from "./+types/contact";
 
 import HeroSection from "~/sections/HeroSection/HeroSection";
 import TestimonialsSection from "~/sections/TestimonialsSection/TestimonialsSection";
@@ -9,20 +9,15 @@ import FaqSection from "~/sections/FaqSection/FaqSection";
 
 export function meta({}: Route.MetaArgs) {
     return [
-        { title: "Hi| David Guitarist" },
-        { name: "description", content: "This is a mock website." },
+        { title: "Contact" },
+        { name: "description", content: "Let's begin your journey." },
     ];
 }
 
-export default function Home() {
+export default function Contact() {
     return (
         <div className="">
-            <HeroSection />
-            <AboutSection />
-            <BenefitsSection />
-            <TestimonialsSection />
             <ContactSection />
-            <FaqSection />
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import type { Route } from "./+types/project-info";
-import ProjectDetailsSection from "~/sections/ProjectDetailsSection/ProjectDetailsSection";
+import ProjectDetailsSection from "~/sections/ProjectInfoSection/ProjectInfoSection";
 
 export function meta({}: Route.MetaArgs) {
     return [

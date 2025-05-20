@@ -17,7 +17,7 @@ export default function P({
 }: PProps) {
     let commonStyles = "p-2 ";
     return (
-        <p {...rest} className="text-ndark">
+        <p {...rest} className={`text-ndark ${className}`}>
             {children}
         </p>
     );

@@ -10,7 +10,7 @@ interface ButtonProps extends ComponentPropsWithoutRef<"button"> {
     variant?: "primary" | "outline";
 }
 
-export default function H2({
+export default function Button({
     children,
     className = "",
     variant = "primary",
