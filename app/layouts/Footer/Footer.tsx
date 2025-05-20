@@ -11,7 +11,14 @@ import P from "~/components/P/P";
 import instructorData from "~/assets/instructorDetails.json";
 import HighlightText from "./components/HightlightText";
 
+import { SocialMediaIconsList } from "./containers/SocialMediaIconsList";
+import useBreakpoint from "~/hooks/useBreakpoint";
+import { useLayoutEffect } from "react";
+
 export default function Footer() {
+    const { isSmUp, isLgUp, isMdUp, isXs } = useBreakpoint();
+
+    // useLayoutEffect(()=> {},[breakp])
     return (
         <footer className="bg-ndark h-fit px-4 py-2">
             <div className=""></div>
@@ -59,35 +66,28 @@ export default function Footer() {
                                 {instructorData.email}
                             </CopyableText>
                         </li>
-                    </ul>
-                </div>
-
-                <div className="border-l h-16 self-center border-accent"></div>
-
-                <div className=" min-h-20 flex flex-col items-start justify-center">
-                    <P className="text-nlight">Follow us!</P>
-                    <ul className="flex flex-row gap-2 ">
                         <li>
-                            <HighlightText toUrl={"#"} highlight="text">
-                                <FaInstagram />
-                            </HighlightText>
-                        </li>
-                        <li>
-                            <HighlightText toUrl={"#"} highlight="text">
-                                <FaFacebookSquare />
-                            </HighlightText>
-                        </li>
-                        <li>
-                            <HighlightText
-                                toUrl={"#"}
-                                highlight="text"
-                                className="hover:text-black"
-                            >
-                                <FaSquareXTwitter />
-                            </HighlightText>
+                            {
+                                <ul className="flex flex-row gap-2">
+                                    <SocialMediaIconsList />
+                                </ul>
+                            }
                         </li>
                     </ul>
                 </div>
+
+                {/* {isLgUp && (
+                    <div className="border-l h-16 self-center border-accent"></div>
+                )}
+
+                {isLgUp && (
+                    <div className=" min-h-20 flex flex-col items-start justify-center">
+                        <P className="text-nlight">Follow us!</P>
+                        <ul className="flex flex-row gap-2 ">
+                            <SocialMediaIconsList />
+                        </ul>
+                    </div>
+                )} */}
             </div>
             <P className="text-nlight text-center">&copy;DavidGuitarist 2025</P>
         </footer>

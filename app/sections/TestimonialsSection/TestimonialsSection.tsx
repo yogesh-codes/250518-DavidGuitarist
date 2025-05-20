@@ -7,6 +7,7 @@ import TestimonialItem from "./components/TestimonialItem";
 import Section from "~/components/Section/Section";
 import PageInfo from "~/components/PageInfo/PageInfo";
 import H2 from "~/components/H2/H2";
+import P from "~/components/P/P";
 
 export default function TestimonialsSection() {
     const data = testimonialDataJSON;
@@ -18,9 +19,9 @@ export default function TestimonialsSection() {
             <PageInfo>
                 <H2 className=" text-primary">Testimonials</H2>
 
-                <p className="self-center mb-8 text-pureblack">
+                <P className="self-center mb-8 text-pureblack">
                     Here's what my students have to say about me
-                </p>
+                </P>
 
                 {/* <div className=" grid grid-cols-1 place-self-center gap-4 px-0 max-w-120 md:grid-cols-3 md:px-4 md:py-4 md:gap-8 md:max-w-160"> */}
                 <div className="columns-1 sm:columns-2 md:columns-2 lg:columns-3 gap-4 px-4 self-center">

@@ -37,7 +37,10 @@ export default function HeroSection() {
                         David Strum
                     </span>
                 </h1>
-                <p className="absolute bottom-0 text-2xl w-full text-center text-nlight bg-nbehind">
+                <p
+                    hidden={true}
+                    className="absolute bottom-0 text-2xl w-full text-center text-nlight bg-nbehind"
+                >
                     and I teach live guitar lessons!
                 </p>
             </div>

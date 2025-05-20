@@ -1,23 +1,24 @@
 import type {
     ReactNode,
     HTMLAttributes,
-    ComponentPropsWithoutRef,
+    ComponentPropsWithRef,
+    Ref,
 } from "react";
 
-interface PProps extends ComponentPropsWithoutRef<"p"> {
+interface PProps extends ComponentPropsWithRef<"p"> {
     children: ReactNode;
     className?: string;
+    ref?: Ref<HTMLParagraphElement>;
 }
 
-export default function P({
-    children,
-    className = "",
-
-    ...rest
-}: PProps) {
-    let commonStyles = "p-2 ";
+export default function P({ children, className = "", ref, ...rest }: PProps) {
     return (
-        <p {...rest} className={`text-ndark ${className}`}>
+        <p
+            ref={ref}
+            {...rest}
+            className={`p-2 text-md
+        lg:text-lg text-ndark ${className}`}
+        >
             {children}
         </p>
     );

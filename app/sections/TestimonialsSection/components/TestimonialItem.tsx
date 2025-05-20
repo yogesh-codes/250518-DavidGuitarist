@@ -1,4 +1,5 @@
 import type { FunctionComponent } from "react";
+import P from "~/components/P/P";
 
 interface TestimonialItemProps {
     id: string;
@@ -14,9 +15,9 @@ const TestimonialItem: FunctionComponent<TestimonialItemProps> = ({
     return (
         <div className="font-quicksand max-w-64">
             <div className=" rounded-2xl p-4 bg-purewhite text-pureblack">
-                {content}
+                <P className="text-pureblack">{content}</P>
             </div>
-            <div className="text-pureblack">{studentName}</div>
+            <P className="text-pureblack">{studentName}</P>
         </div>
     );
 };

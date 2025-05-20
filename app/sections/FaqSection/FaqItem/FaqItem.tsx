@@ -7,6 +7,7 @@ import {
     type ReactNode,
 } from "react";
 import { MdExpandMore, MdExpandLess } from "react-icons/md";
+import P from "~/components/P/P";
 
 interface FaqItemProps {
     className?: string;
@@ -69,7 +70,7 @@ const FaqItem: FunctionComponent<FaqItemProps> = ({
                     )}
                     <span className="text-ndark">{question}</span>
                 </span>
-                <div
+                <p
                     ref={answerRef}
                     style={{
                         height: isExpanded ? `${answerHeightPx}px` : "0px",
@@ -79,7 +80,7 @@ const FaqItem: FunctionComponent<FaqItemProps> = ({
                     `}
                 >
                     {answer}
-                </div>
+                </p>
             </button>
         </li>
     );

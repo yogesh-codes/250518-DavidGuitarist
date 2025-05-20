@@ -5,6 +5,7 @@ import Section from "~/components/Section/Section";
 import H2 from "~/components/H2/H2";
 import Button from "~/components/Button/Button";
 import type { FormEvent, FormEventHandler } from "react";
+import P from "~/components/P/P";
 
 export default function ContactSection() {
     const { name, email } = instructorDetails;
@@ -30,9 +31,9 @@ export default function ContactSection() {
                     }}
                 >
                     <div>
-                        <p className="text-nlight">
+                        <P className="text-nlight">
                             What would you like me to call you?
-                        </p>
+                        </P>
 
                         <label
                             htmlFor="username"
@@ -52,7 +53,7 @@ export default function ContactSection() {
                     </div>
 
                     <div>
-                        <p className="text-nlight">Email</p>
+                        <P className="text-nlight">Email</P>
                         <label
                             htmlFor="useremail"
                             className="sr-only"
@@ -68,13 +69,11 @@ export default function ContactSection() {
                             placeholder="Your Email"
                             autoComplete="email"
                         />
-
-                        <p className="text-nlight">
+                    </div>
+                    <div>
+                        <P className="text-nlight">
                             Tell me what you expect out of these sessions;
-                        </p>
-                        <p className="text-nlight">
-                            what would be a dream come true moment be for you?
-                        </p>
+                        </P>
                         <label
                             htmlFor="useremail"
                             className="sr-only"

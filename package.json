@@ -2,7 +2,6 @@
     "name": "david-guitarist",
     "private": true,
     "type": "module",
-    "homepage": "https://david.yogeshv.com",
     "scripts": {
         "build": "react-router build",
         "dev": "react-router dev",
@@ -11,7 +10,7 @@
         "dev:mem": "node --inspect ./node_modules/.bin/vite",
         "preview": "vite preview",
         "predeploy": "npm run build",
-        "deploy": "gh-pages --dist build/client --branch gh-pages"
+        "deploy": "gh-pages --dist build/client --branch gh-pages --cname david.yogeshv.com"
     },
     "dependencies": {
         "@react-router/node": "^7.5.3",

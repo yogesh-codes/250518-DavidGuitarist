@@ -35,7 +35,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                     name="viewport"
                     content="width=device-width, initial-scale=1"
                 />
-
+                <link rel="favicon" href="./favicon_256.ico" />
                 <Meta />
                 <Links />
             </head>

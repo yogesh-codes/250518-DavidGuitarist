@@ -1,10 +1,5 @@
 [
     {
-        "id": "feat0",
-        "title": "feature",
-        "content": "content"
-    },
-    {
         "id": "feat1",
         "title": "Responsive Mobile-First UI",
         "content": "Tested for small mobile screens 360px to large monitors 2048px"
@@ -12,16 +7,21 @@
     {
         "id": "feat2",
         "title": "Smooth Transitions",
-        "content": "On changing width, the elements glide to their loc"
+        "content": "On changing screen sizes, elements strech to their new dimensions."
     },
     {
-        "id": "feat3",
-        "title": "Dark Mode",
-        "content": "content"
+        "id": "feat2",
+        "title": "Smooth Transitions",
+        "content": "On changing screen sizes, elements strecth to their new dimensions"
     },
     {
         "id": "feat4",
-        "title": "Responsive NavBar",
-        "content": "Shows Hamburger menu upto small tablets, otherwise shows expanded items"
+        "title": "Dark Mode",
+        "content": "Use the Dark toggle to reduce eye strain in low-light environments."
+    },
+    {
+        "id": "feat5",
+        "title": "Opt-in Form UI",
+        "content": "Interested users can register."
     }
 ]
