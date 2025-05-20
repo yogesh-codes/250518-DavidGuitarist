@@ -1,0 +1,1 @@
+import{o as s}from"./chunk-D4RADZKF-BlkkXO5c.js";function m({children:r,className:c="",variant:t="primary",...e}){let o="p-2 cursor-pointer",n=t==="primary"?"bg-ndark text-nlight hover:bg-accent":"border-2 border-ndark hover:bg-accent border-accent",a=o+" "+n;return s.jsx("button",{...e,className:`${a}`,children:r})}export{m as B};
