@@ -43,18 +43,32 @@ export default function HeroSection() {
                 text-nlight text-left 
                 
                 -translate-y-1/2
-                w-8/12 text-xl top-1/2 right-0    
+                w-8/12  top-1/2 right-0    
                 xs:w-/5 xs:text-2xl xs:top-1/2  
-                sm:text-3xl/snug sm:top-1/2 sm:right-0/12  
-                zdmd:text-4xl/snug md:bottom-1/3 
-                lg:text-5xl/snug lg:top-1/2 lg:right-0/12
+                 sm:top-1/2 sm:right-0/12  
+                 md:bottom-1/3 
+                 lg:top-1/2 lg:right-0/12
                 my-transition "
                 >
-                    <p className=" text-nlight font-medium bg-primary/70 rounded-tl-2xl pt-8 pl-2 mb-0 my-transition shadow-xl shadow-accent/50">
+                    <p
+                        className=" text-nlight font-medium bg-primary/70 rounded-tl-2xl pt-8 pl-2 mb-0 my-transition shadow-xl shadow-accent/50
+                    text-xl
+                        sm:text-3xl/snug
+                    zdmd:text-4xl/snug
+                    lg:text-5xl/snug
+                    "
+                    >
                         Turn Your Passion into <b>Skill</b>
                     </p>
 
-                    <p className="text-sm text-nlight bg-primary/70 rounded-bl-2xl pl-3 pt-1 pb-10 my-transition">
+                    <p
+                        className=" text-nlight bg-primary/70 rounded-bl-2xl pl-3 pt-1 pb-10 my-transition
+                    text-lg
+                    sm:text-2xl/snug
+                    zdmd:text-3xl/snug
+                    lg:text-4xl/snug
+                    "
+                    >
                         One Lesson at a Time
                     </p>
                 </div>
