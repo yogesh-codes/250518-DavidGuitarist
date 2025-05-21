@@ -112,8 +112,8 @@ export default function Navbar() {
                 {
                     <NavList
                         className={`flex flex-col w-full items-center overflow-hidden
-                    sm:h-0
-                    gap-2 my-transition                    
+                    
+                     my-transition                    
                     `}
                         ref={ulRef}
                         style={{ height: isExpanded ? `${heightPx}px` : "0px" }}

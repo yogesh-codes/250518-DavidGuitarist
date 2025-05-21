@@ -68,7 +68,7 @@ export default function Footer() {
                         </li>
                         <li>
                             {
-                                <ul className="flex flex-row gap-2">
+                                <ul className="flex flex-row justify-end gap-2 h-10">
                                     <SocialMediaIconsList />
                                 </ul>
                             }

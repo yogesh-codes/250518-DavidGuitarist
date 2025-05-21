@@ -20,7 +20,7 @@ export default function NavItem({
                     return isActive ? "text-accent" : "text-ndark";
                 }}
             >
-                <div className="flex flex-col items-center justify-center hover:text-accent my-transition">
+                <div className="flex flex-col items-center justify-center hover:text-accent my-transition p-0">
                     <span className="">{icon}</span>
                     <span>{children}</span>
                 </div>
