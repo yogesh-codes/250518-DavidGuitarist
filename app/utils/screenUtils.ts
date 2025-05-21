@@ -27,3 +27,10 @@ export function getScreenWidth(): number {
     }
     return 0;
 }
+
+export function getScreenHeight(): number {
+    if (typeof window !== "undefined") {
+        return window.innerHeight || document.documentElement.clientWidth;
+    }
+    return 0;
+}

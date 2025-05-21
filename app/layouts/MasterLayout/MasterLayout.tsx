@@ -1,0 +1,150 @@
+import { useLayoutEffect, useState } from "react";
+import { isRouteErrorResponse, Outlet, useRouteError } from "react-router";
+import { useScreenHeight } from "~/hooks/useScreenHeight";
+import { useScreenWidth } from "~/hooks/useScreenWidth";
+
+import { DNCTape } from "./components/DNCtape";
+
+export default function MasterLayout() {
+    const width = useScreenWidth();
+    const height = useScreenHeight();
+    const [showLines, setShowLines] = useState<boolean>(true);
+
+    console.log(width);
+    let message = "";
+    let device_ratio = 0;
+    let device_name = "";
+
+    if (width < 360) {
+        message = "No need to check. too small❌🔛";
+        device_ratio = 610 / 320;
+        device_name = "iPhoneSE";
+    } else if (width < 480) {
+        message = "default⬜";
+        device_ratio = 896 / 414;
+        device_name = "iPhoneXR";
+    } else if (width < 640) {
+        device_ratio = 896 / 414;
+        device_name = "iPhoneXR";
+    } else if (width < 768) {
+        message = "crossed sm🟨";
+        device_ratio = 1024 / 768;
+        device_name = "iPad Portrait";
+    } else if (width < 1024) {
+        message = "crossed md🟪";
+        device_ratio = 768 / 1024;
+        device_name = "iPad Landscape Mode";
+    } else if (width < 1536) {
+        message = "crossed lg💻🟦";
+        device_ratio = 768 / 1366;
+        device_name = "Laptop";
+    } else {
+        message = "crossed 2xl🟧";
+        device_ratio = 768 / 1366;
+        device_name = "BigMonitor";
+    }
+
+    let expected_height = () => {
+        return Math.floor(width * device_ratio);
+    };
+
+    let isRenderable = () => {
+        if (width / height < 1 / device_ratio) {
+            return true;
+        }
+        return false;
+    };
+
+    return (
+        <>
+            {import.meta.env.DEV && (
+                <>
+                    <div className={`${showLines ? "" : "hidden"} `}>
+                        <div className="fixed text-black bg-white/80 w-full font-bold text-center text-[2vh] z-52 h-[2vh]">
+                            ({width} x {height})-{device_name}
+                            {/* {isRenderable() ? " FULL" : " PARTIAL VIEW"} */}
+                        </div>
+
+                        {/* //Top */}
+                        <DNCTape
+                            style={{ width: `${width}px`, height: `2vh` }}
+                            className={``}
+                        ></DNCTape>
+                        {/* Left */}
+                        <DNCTape
+                            style={{
+                                height: `${expected_height()}px`,
+                                width: "2vw",
+                                left: 0,
+                                top: 0,
+                            }}
+                            className={`fixed z-51`}
+                        />
+
+                        {/* Right */}
+                        <DNCTape
+                            style={{
+                                height: `${expected_height()}px`,
+                                width: "2vw",
+                                right: "0vw",
+                                top: 0,
+                            }}
+                            className={`fixed z-51 bg-white`}
+                        />
+
+                        {/* Bottom */}
+                        <DNCTape
+                            style={{
+                                top: `${expected_height() - 16}px`,
+
+                                height: `2vh`,
+                                width: `${width}px`,
+                            }}
+                            className={`fixed z-51 bg-white`}
+                        />
+                    </div>
+
+                    {/* Toggler */}
+                    <div
+                        className={`fixed h-4 z-52 text-center text-xs ${
+                            showLines ? "bg-green-500" : "bg-white"
+                        }`}
+                        style={{
+                            left: 0,
+                            top: 0,
+                            width: "2vw",
+                            height: "2vh",
+                        }}
+                        onClick={() => {
+                            setShowLines(!showLines);
+                        }}
+                    >
+                        !
+                    </div>
+                </>
+            )}
+
+            <main>
+                <Outlet />
+            </main>
+        </>
+    );
+}
+
+// ErrorBoundary Component for the Layout
+export function ErrorBoundary() {
+    const error = useRouteError();
+
+    if (isRouteErrorResponse(error)) {
+        return (
+            <div className="error-boundary">
+                <h2>
+                    Error: {error.status} - {error.statusText}
+                </h2>
+                <p>{error.data?.message || "Something went wrong."}</p>
+            </div>
+        );
+    }
+
+    return <div className="error-boundary">Unknown Error Occurred.</div>;
+}

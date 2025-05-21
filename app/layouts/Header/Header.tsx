@@ -6,12 +6,12 @@ export default function Header() {
     return (
         <>
             <header className=" py-2 border-b-2 border-purewhite bg-nlight fixed w-full max-w-full max-h-fit z-5">
-                <div className="flex flex-row">
-                    <div className="flex flex-col w-full justify-start items-start"></div>
-                </div>
+                {/* <div className="flex flex-row"> */}
+                {/* <div className="flex flex-col w-full justify-start items-start"></div> */}
+                {/* </div> */}
                 <Navbar />
             </header>
-            <div className="h-12"></div>
+            <div className="h-16"></div>
         </>
     );
 }

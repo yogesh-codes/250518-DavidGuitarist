@@ -16,8 +16,9 @@ export default function P({ children, className = "", ref, ...rest }: PProps) {
         <p
             ref={ref}
             {...rest}
-            className={`p-2 text-md
-        lg:text-lg text-ndark ${className}`}
+            className={`
+                py-2 text-base
+                lg:text-lg text-ndark ${className}`}
         >
             {children}
         </p>

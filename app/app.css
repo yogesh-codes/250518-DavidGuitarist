@@ -69,17 +69,17 @@
     /* Apply background and font to html/body */
     html,
     body {
-        @apply bg-white dark:bg-gray-950;
+        /* @apply bg-white dark:bg-gray-950; TBD*/
         font-family: var(--font-quicksand);
     }
 
-    h1 {
+    /* h1 {
         @apply text-4xl mb-4 
                 xs:text-5xl 
                 text-ndark 
                 text-center 
                 self-center;
-    }
+    } */
 
     h1,
     h2,

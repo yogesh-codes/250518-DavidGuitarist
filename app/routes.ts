@@ -7,7 +7,7 @@ import {
 //import { ErrorBoundary } from "./layouts/StandardLayout";
 
 export default [
-    layout("layouts/MasterLayout.tsx", [
+    layout("layouts/MasterLayout/MasterLayout.tsx", [
         layout("layouts/StandardLayout.tsx", [
             index("routes/home.tsx"),
             route("contact", "routes/contact.tsx"),
