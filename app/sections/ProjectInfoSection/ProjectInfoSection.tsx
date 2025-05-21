@@ -15,7 +15,10 @@ export default function ProjectDetailsSection() {
     return (
         <>
             <Section>
-                <h1> David Strum- Guitarist</h1>
+                <h1 className="text-xl px-1 text-center bg-ndark text-nlight">
+                    {" "}
+                    Landing Page for a Guitar Teacher
+                </h1>
                 <P>This is a mock website made by Yogesh V.</P>
             </Section>
 

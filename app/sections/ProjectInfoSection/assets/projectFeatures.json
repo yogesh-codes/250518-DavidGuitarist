@@ -2,26 +2,26 @@
     {
         "id": "feat1",
         "title": "Responsive Mobile-First UI",
-        "content": "Tested for small mobile screens 360px to large monitors 2048px"
+        "content": "Tested for small mobile screens to large monitors"
     },
     {
         "id": "feat2",
         "title": "Smooth Transitions",
-        "content": "On changing screen sizes, elements strech to their new dimensions."
+        "content": "On changing screen sizes, elements strech to their new dimensions"
     },
     {
-        "id": "feat2",
-        "title": "Smooth Transitions",
-        "content": "On changing screen sizes, elements strecth to their new dimensions"
+        "id": "feat3",
+        "title": "Testimonials Board",
+        "content": "Testimonials are feedbacks you receive from the clients you teach. Good testimonials raise credibility"
     },
     {
         "id": "feat4",
         "title": "Dark Mode",
-        "content": "Use the Dark toggle to reduce eye strain in low-light environments."
+        "content": "Use the Dark toggle to reduce eye strain in low-light environments"
     },
     {
         "id": "feat5",
         "title": "Opt-in Form UI",
-        "content": "Interested users can register."
+        "content": "Interested users can opt in to register with their emails and other info, so you can get back to them"
     }
 ]
