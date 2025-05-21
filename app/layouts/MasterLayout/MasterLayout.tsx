@@ -18,26 +18,25 @@ export default function MasterLayout() {
     if (width < 360) {
         message = "No need to check. too small❌🔛";
         device_ratio = 610 / 320;
-        device_name = "iPhoneSE";
     } else if (width < 480) {
+        device_name = "SE Portrait";
+        device_ratio = 667 / 375;
         message = "default⬜";
-        device_ratio = 896 / 414;
-        device_name = "iPhoneXR";
     } else if (width < 640) {
+        device_name = "XR Portrait";
         device_ratio = 896 / 414;
-        device_name = "iPhoneXR";
     } else if (width < 768) {
         message = "crossed sm🟨";
-        device_ratio = 1024 / 768;
-        device_name = "iPad Portrait";
+        device_ratio = 768 / 1024;
+        device_name = "iPad | Laptop Halfscreen";
     } else if (width < 1024) {
         message = "crossed md🟪";
-        device_ratio = 768 / 1024;
+        device_ratio = 1024 / 768;
         device_name = "iPad Landscape Mode";
     } else if (width < 1536) {
         message = "crossed lg💻🟦";
         device_ratio = 768 / 1366;
-        device_name = "Laptop";
+        device_name = "Laptop Landscape";
     } else {
         message = "crossed 2xl🟧";
         device_ratio = 768 / 1366;
@@ -61,7 +60,7 @@ export default function MasterLayout() {
                 <>
                     <div className={`${showLines ? "" : "hidden"} `}>
                         <div className="fixed text-black bg-white/80 w-full font-bold text-center text-[2vh] z-52 h-[2vh]">
-                            ({width} x {height})-{device_name}
+                            ({width} x {height})- {message} {device_name}
                             {/* {isRenderable() ? " FULL" : " PARTIAL VIEW"} */}
                         </div>
 
@@ -78,7 +77,7 @@ export default function MasterLayout() {
                                 left: 0,
                                 top: 0,
                             }}
-                            className={`fixed z-51`}
+                            className={``}
                         />
 
                         {/* Right */}
@@ -89,7 +88,7 @@ export default function MasterLayout() {
                                 right: "0vw",
                                 top: 0,
                             }}
-                            className={`fixed z-51 bg-white`}
+                            className={``}
                         />
 
                         {/* Bottom */}
@@ -100,7 +99,7 @@ export default function MasterLayout() {
                                 height: `2vh`,
                                 width: `${width}px`,
                             }}
-                            className={`fixed z-51 bg-white`}
+                            className={``}
                         />
                     </div>
 
